@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "nas_drama",
+      "name": "新绿影视",
+      "type": 1,
+      "api": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox",
+      "filter": {
+        "url": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox"
+      }
+    }
+  ]
+}
