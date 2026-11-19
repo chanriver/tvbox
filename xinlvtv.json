@@ -1,13 +1,54 @@
 {
-  "sites": [
-    {
-      "key": "nas_drama",
-      "name": "新绿影视",
-      "type": 1,
-      "api": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox",
-      "filter": {
-        "url": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox"
-      }
-    }
-  ]
+    "spider": {
+        "site_url": "http://zlwnas.mycloudnas.com:8088",
+        "mac_url": "http://zlwnas.mycloudnas.com:8088",
+        "api": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox",
+        "play_url": "http://zlwnas.mycloudnas.com:8088/api.php/resolve/proxy?url=",
+        "parse": "http://zlwnas.mycloudnas.com:8088/api.php/resolve/m3u8?url=",
+        "filter": {
+            "url": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox"
+        },
+        "logo": "http://zlwnas.mycloudnas.com:8088/kltv-icon/logo_256.png",
+        "name": "来看影视"
+    },
+    "sites": [
+        {
+            "key": "klfilm",
+            "name": "来看影视",
+            "type": 1,
+            "api": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox",
+            "playUrl": "",
+            "parse": "http://zlwnas.mycloudnas.com:8088/api.php/resolve/m3u8?url=",
+            "filter": {
+                "url": "http://zlwnas.mycloudnas.com:8088/api.php/tvbox"
+            },
+            "playerType": 1,
+            "jar": "",
+            "ext": {
+                "playerType": 1
+            }
+        }
+    ],
+    "lives": [],
+    "parses": [
+        {
+            "name": "本地代理",
+            "url": "http://zlwnas.mycloudnas.com:8088/api.php/resolve/m3u8?url=",
+            "type": 1
+        }
+    ],
+    "flags": [
+        "youku",
+        "qq",
+        "iqiyi",
+        "qiyi",
+        "letv",
+        "sohu",
+        "tudou",
+        "pptv",
+        "mgtv",
+        "wasu",
+        "bilibili",
+        "renrenmi"
+    ]
 }
